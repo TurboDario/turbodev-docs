@@ -3,85 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TurboDev Documentation</title>
+    <title>TurboDev Docs</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="docs.js"></script>
-
-    <style>
-        body {
-            max-width: 800px;
-            margin: 20px auto;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            padding: 0 10px;
-            text-align: center;
-        }
-        header {
-            margin-bottom: 20px;
-        }
-        select {
-            margin-top: 10px;
-            padding: 5px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .btn {
-            display: inline-block;
-            padding: 8px 12px;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-            text-decoration: none;
-            color: #333;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background-color: #ddd;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>TurboDev Documentation</h1>
+        <h1 id="app_name">TurboDev Docs</h1>
+        <div>
+            <label for="app-selector">App:</label>
+            <select id="app-selector">
+                <option value="parkar">ParKar</option>
+            </select>
 
-        <label for="app-selector">Select an app:</label>
-        <select id="app-selector">
-            <option value="parkar">ParKar</option>
-            <!-- Agrega aquí futuras apps -->
-        </select>
-
-        <label for="language-selector">Select language:</label>
-        <select id="language-selector">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-        </select>
+            <label for="language-selector">Language:</label>
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
     </header>
 
     <main>
-        <h2 id="welcome"></h2>
+        <h2 id="welcome">Welcome</h2>
         <ul>
-            <li><a id="eula" href="parkar/EULA_ParKar.html"></a></li>
-            <li><a id="terms" href="parkar/Terms_ParKar.html"></a></li>
-            <li><a id="privacy_policy" href="parkar/Privacy_ParKar.html"></a></li>
+            <li><a id="eula" href="parkar/en/EULA_ParKar.html">EULA</a></li>
+            <li><a id="terms" href="parkar/en/Terms_ParKar.html">Terms and Conditions</a></li>
+            <li><a id="privacy_policy" href="parkar/en/Privacy_ParKar.html">Privacy Policy</a></li>
         </ul>
-        <p id="developer"></p>
-        <p id="version"></p>
-        <p><a href="mailto:turbomonguer.dev@gmail.com" id="contact_support"></a></p>
-        <p><a href="https://play.google.com/store/apps/details?id=com.turbodev.parkar" id="rate_us"></a></p>
+        <p id="developer">Developer: TurboDev</p>
+        <p id="version">Version: 1.0.0</p>
+        <p><a href="mailto:turbomonguer.dev@gmail.com" id="contact_support">Contact Support</a></p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.turbodev.parkar" id="rate_us">Rate us on Google Play</a></p>
     </main>
 
     <footer>

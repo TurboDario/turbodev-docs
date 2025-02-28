@@ -1,38 +1,113 @@
+/* Global styles */
 body {
+    max-width: 900px;
+    margin: 40px auto;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 20px;
+    background-color: #f9f9f9;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
+    background: #0066cc;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header select {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Main content */
 main {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
+/* Lists */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
+ul li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background: #e3f2fd;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+ul li a:hover {
+    background: #bbdefb;
+}
+
+/* Footer */
 footer {
     margin-top: 30px;
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #ddd;
     padding-top: 10px;
     text-align: center;
+    font-size: 14px;
 }
 
-select {
-    font-size: 16px;
-    padding: 4px;
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #004c99;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    select {
+        margin-top: 5px;
+    }
 }

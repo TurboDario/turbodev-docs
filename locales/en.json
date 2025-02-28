@@ -1,6 +1,6 @@
 {
     "app_name": "ParKar",
-    "welcome": "Welcome to ParKar documentation!",
+    "welcome": "Welcome to ParKar Documentation!",
     "eula": "End User License Agreement (EULA)",
     "terms": "Terms and Conditions",
     "privacy_policy": "Privacy Policy",
@@ -8,4 +8,4 @@
     "version": "Version: {version}",
     "contact_support": "Contact Support",
     "rate_us": "Rate us on Google Play"
-  }
+}
