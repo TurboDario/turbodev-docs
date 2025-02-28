@@ -23,7 +23,7 @@
     <hr>
     <main>
         <a id="back-home" href="/" class="btn"></a>
-        <article>
+        <article id="content-container">
             {{ content }}
         </article>
     </main>
@@ -36,6 +36,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const languageSelector = document.getElementById("language-selector");
+            const contentContainer = document.getElementById("content-container");
+            const currentPath = window.location.pathname;
+            const appFolder = currentPath.split('/')[1];  // Assumes structure like /parkar/en/EULA_ParKar.html
 
             let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
             languageSelector.value = currentLanguage;
@@ -58,12 +61,39 @@
                     .catch(error => console.error("Error loading language file:", error));
             }
 
+            function changeContentLanguage(language) {
+                const filename = currentPath.split('/').pop(); // Get the filename (e.g., EULA_ParKar.html)
+                const newPath = `/${appFolder}/${language}/${filename}`;
+s
+                fetch(newPath)
+                    .then(response => {
+                        if (!response.ok) throw new Error(`Error loading content file: ${newPath}`);
+                        return response.text();
+                    })
+                    .then(html => {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, "text/html");
+                        const newContent = doc.querySelector("article");
+
+                        if (newContent) {
+                            contentContainer.innerHTML = newContent.innerHTML; // Replace only article content
+                        } else {
+                            console.error("No <article> found in:", newPath);
+                        }
+                    })
+                    .catch(error => console.error("Error loading content:", error));
+            }
+
+
             languageSelector.addEventListener("change", function () {
-                localStorage.setItem("selectedLanguage", this.value);
-                loadLanguageStrings(this.value);
+                currentLanguage = this.value;
+                localStorage.setItem("selectedLanguage", currentLanguage);
+                loadLanguageStrings(currentLanguage);
+                changeContentLanguage(currentLanguage);
             });
 
             loadLanguageStrings(currentLanguage);
+            changeContentLanguage(currentLanguage);
         });
     </script>
 </body>
