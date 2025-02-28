@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>ParKar Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="docs.js"></script>
 </head>
 <body>
-    <h1>{{ page.title }}</h1>
-    <hr>
-    <article>
-        {{ content }}
-    </article>
-    <hr>
-    <footer>
-        <p>© 2024 TurboDev | <a href="/">Home</a></p>
-    </footer>
+    <header>
+        <h1 id="app_name">ParKar Documentation</h1>
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </header>
+
+    <main>
+        <h2 id="welcome"></h2>
+        <ul>
+            <li><a id="eula" href="parkar/EULA_ParKar.html"></a></li>
+            <li><a id="terms" href="parkar/Terms_ParKar.html"></a></li>
+            <li><a id="privacy_policy" href="parkar/Privacy_ParKar.html"></a></li>
+        </ul>
+        <p id="developer"></p>
+        <p id="version"></p>
+        <p><a href="mailto:turbomonguer.dev@gmail.com" id="contact_support"></a></p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.turbodev.parkar" id="rate_us"></a></p>
+    </main>
 </body>
 </html>
