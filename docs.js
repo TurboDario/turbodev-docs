@@ -1,80 +1,105 @@
 document.addEventListener("DOMContentLoaded", function () {
     const languageSelector = document.getElementById("language-selector");
-    const appSelector = document.getElementById("app-selector");
-    const contentContainer = document.querySelector("article");
-
+  
+    const homeSection = document.getElementById("home-section");
+    const contentSection = document.getElementById("content-section");
+    const contentContainer = document.getElementById("content-container");
+  
+    const eulaLink = document.getElementById("eula");
+    const termsLink = document.getElementById("terms");
+    const privacyLink = document.getElementById("privacy_policy");
+    const backHomeLink = document.getElementById("back-home");
+  
     let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
-    let currentApp = localStorage.getItem("selectedApp") || "parkar";
-
-    if (languageSelector) languageSelector.value = currentLanguage;
-    if (appSelector) appSelector.value = currentApp;
-
+    languageSelector.value = currentLanguage;
+  
     function loadLanguageStrings(language) {
-        fetch(`locales/${language}.json`)
-            .then(response => response.json())
-            .then(strings => {
-                setTextContent("page-title", strings.page_title);
-                setTextContent("app-name", strings.app_name);
-                setTextContent("label-app", strings.label_app);
-                setTextContent("label-language", strings.label_language);
-                setTextContent("welcome", strings.welcome);
-                setTextContent("developer", strings.developer);
-                setTextContent("version", strings.version.replace("{version}", "1.0.0"));
-                setTextContent("contact-support", strings.contact_support);
-                setTextContent("rate-us", strings.rate_us);
-                setTextContent("back-home", strings.back_home);
-                setTextContent("developer-name", strings.developer);
-                setTextContent("home-link", strings.home);
-                updateDocumentContent();
-            })
-            .catch(error => console.error("Error loading language file:", error));
+      fetch(`locales/${language}.json`)
+        .then((response) => response.json())
+        .then((strings) => {
+          document.getElementById("page-title").textContent = strings.page_title;
+          document.getElementById("app-name").textContent = strings.app_name;
+          document.getElementById("label-language").textContent = strings.label_language;
+  
+          languageSelector.options[0].textContent = strings.language_english;
+          languageSelector.options[1].textContent = strings.language_spanish;
+  
+          document.getElementById("welcome").textContent = strings.welcome;
+          eulaLink.textContent = strings.eula;
+          termsLink.textContent = strings.terms;
+          privacyLink.textContent = strings.privacy_policy;
+          document.getElementById("developer").textContent = strings.developer;
+          document.getElementById("version").textContent = strings.version.replace("{version}", "1.0.0");
+          document.getElementById("contact_support").textContent = strings.contact_support;
+          document.getElementById("rate_us").textContent = strings.rate_us;
+          document.getElementById("developer-name").textContent = strings.developer;
+          document.getElementById("home-link").textContent = strings.home;
+          backHomeLink.textContent = strings.back_home;
+        })
+        .catch((error) => console.error("Error loading language file:", error));
     }
-
-    function setTextContent(id, text) {
-        const element = document.getElementById(id);
-        if (element) element.textContent = text;
+  
+    function showHome() {
+      homeSection.style.display = "block";
+      contentSection.style.display = "none";
+      contentContainer.innerHTML = "";
     }
-
-    function updateDocumentContent() {
-        const filename = window.location.pathname.split('/').pop(); // Get the current file name
-        const newPath = `/${currentApp}/${currentLanguage}/${filename}`; // New path based on selected language
-
-        fetch(newPath)
-            .then(response => {
-                if (!response.ok) throw new Error(`Error loading content file: ${newPath}`);
-                return response.text();
-            })
-            .then(html => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, "text/html");
-                const newContent = doc.querySelector("article");
-
-                if (newContent) {
-                    contentContainer.innerHTML = newContent.innerHTML; // Replace only the article content
-                } else {
-                    console.error("No <article> found in:", newPath);
-                }
-            })
-            .catch(error => console.error("Error loading content:", error));
-    }
-
-    if (languageSelector) {
-        languageSelector.addEventListener("change", function () {
-            currentLanguage = this.value;
-            localStorage.setItem("selectedLanguage", currentLanguage);
-            loadLanguageStrings(currentLanguage);
-            updateDocumentContent();
+  
+    function showContent(fileName) {
+      homeSection.style.display = "none";
+      contentSection.style.display = "block";
+  
+      const path = `parkar/${currentLanguage}/${fileName}`;
+      fetch(path)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Error loading content file: ${path}`);
+          }
+          return response.text();
+        })
+        .then((html) => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, "text/html");
+          const newContent = doc.querySelector("article");
+          if (newContent) {
+            contentContainer.innerHTML = newContent.innerHTML;
+          } else {
+            contentContainer.innerHTML = "<p>Content not found.</p>";
+          }
+        })
+        .catch((error) => {
+          console.error("Error loading content:", error);
+          contentContainer.innerHTML = "<p>Unable to load content.</p>";
         });
     }
-
-    if (appSelector) {
-        appSelector.addEventListener("change", function () {
-            currentApp = this.value;
-            localStorage.setItem("selectedApp", currentApp);
-            updateDocumentContent();
-        });
-    }
-
+  
+    languageSelector.addEventListener("change", function () {
+      currentLanguage = this.value;
+      localStorage.setItem("selectedLanguage", currentLanguage);
+      loadLanguageStrings(currentLanguage);
+      showHome();
+    });
+  
+    eulaLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      showContent("EULA_ParKar.html");
+    });
+  
+    termsLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      showContent("Terms_ParKar.html");
+    });
+  
+    privacyLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      showContent("Privacy_ParKar.html");
+    });
+  
+    backHomeLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      showHome();
+    });
+  
     loadLanguageStrings(currentLanguage);
-    updateDocumentContent();
-});
+  });
+  
