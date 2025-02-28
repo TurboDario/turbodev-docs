@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     const languageSelector = document.getElementById("language-selector");
-  
     const homeSection = document.getElementById("home-section");
     const contentSection = document.getElementById("content-section");
     const contentContainer = document.getElementById("content-container");
-  
     const eulaLink = document.getElementById("eula");
     const termsLink = document.getElementById("terms");
     const privacyLink = document.getElementById("privacy_policy");
     const backHomeLink = document.getElementById("back-home");
   
     let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
+    let currentFile = null;
     languageSelector.value = currentLanguage;
   
     function loadLanguageStrings(language) {
@@ -20,10 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("page-title").textContent = strings.page_title;
           document.getElementById("app-name").textContent = strings.app_name;
           document.getElementById("label-language").textContent = strings.label_language;
-  
           languageSelector.options[0].textContent = strings.language_english;
           languageSelector.options[1].textContent = strings.language_spanish;
-  
           document.getElementById("welcome").textContent = strings.welcome;
           eulaLink.textContent = strings.eula;
           termsLink.textContent = strings.terms;
@@ -43,12 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
       homeSection.style.display = "block";
       contentSection.style.display = "none";
       contentContainer.innerHTML = "";
+      currentFile = null;
     }
   
     function showContent(fileName) {
       homeSection.style.display = "none";
       contentSection.style.display = "block";
-  
+      currentFile = fileName;
       const path = `parkar/${currentLanguage}/${fileName}`;
       fetch(path)
         .then((response) => {
@@ -77,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
       currentLanguage = this.value;
       localStorage.setItem("selectedLanguage", currentLanguage);
       loadLanguageStrings(currentLanguage);
-      showHome();
+      if (currentFile) {
+        showContent(currentFile);
+      }
     });
   
     eulaLink.addEventListener("click", function (event) {
