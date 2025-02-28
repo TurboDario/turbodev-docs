@@ -7,8 +7,6 @@ collections:
   parkar:
     output: true
     permalink: /:collection/:path/
-  locales:
-    output: false
 
 include:
   - docs.js

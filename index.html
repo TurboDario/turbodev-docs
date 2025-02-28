@@ -3,42 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TurbomonguerDev Docs</title>
+    <title id="page-title"></title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="docs.js"></script>
 </head>
 <body>
     <header>
-        <h1 id="app_name">TurbomonguerDev Docs</h1>
+        <h1 id="app_name"></h1>
         <div>
-            <label for="app-selector">App:</label>
+            <label id="label-app" for="app-selector"></label>
             <select id="app-selector">
                 <option value="parkar">ParKar</option>
             </select>
 
-            <label for="language-selector">Language:</label>
+            <label id="label-language" for="language-selector"></label>
             <select id="language-selector">
-                <option value="en">English</option>
-                <option value="es">Español</option>
+                <option value="en"></option>
+                <option value="es"></option>
             </select>
         </div>
     </header>
 
     <main>
-        <h2 id="welcome">Welcome</h2>
+        <h2 id="welcome"></h2>
         <ul>
-            <li><a id="eula" href="parkar/en/EULA_ParKar.html">EULA</a></li>
-            <li><a id="terms" href="parkar/en/Terms_ParKar.html">Terms and Conditions</a></li>
-            <li><a id="privacy_policy" href="parkar/en/Privacy_ParKar.html">Privacy Policy</a></li>
+            <li><a id="eula" href=""></a></li>
+            <li><a id="terms" href=""></a></li>
+            <li><a id="privacy_policy" href=""></a></li>
         </ul>
-        <p id="developer">Developer: TurbomonguerDev</p>
-        <p id="version">Version: 1.0.0</p>
-        <p><a href="mailto:turbomonguer.dev@gmail.com" id="contact_support">Contact Support</a></p>
-        <p><a href="https://play.google.com/store/apps/details?id=com.TurbomonguerDev.parkar" id="rate_us">Rate us on Google Play</a></p>
+        <p id="developer"></p>
+        <p id="version"></p>
+        <p><a href="mailto:turbomonguer.dev@gmail.com" id="contact_support"></a></p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.TurbomonguerDev.parkar" id="rate_us"></a></p>
     </main>
 
     <footer>
-        <p>© 2024 TurbomonguerDev | <a href="/">Home</a></p>
+        <p>© 2025 <span id="developer_name"></span> | <a href="/" id="home_link"></a></p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const languageSelector = document.getElementById("language-selector");
+            const appSelector = document.getElementById("app-selector");
+
+            let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
+            let currentApp = localStorage.getItem("selectedApp") || "parkar";
+
+            if (languageSelector) languageSelector.value = currentLanguage;
+            if (appSelector) appSelector.value = currentApp;
+
+            function loadLanguageStrings(language) {
+                fetch(`locales/${language}.json`)
+                    .then(response => response.json())
+                    .then(strings => {
+                        document.getElementById("page-title").textContent = strings.page_title;
+                        document.getElementById("app_name").textContent = strings.app_name;
+                        document.getElementById("label-app").textContent = strings.label_app;
+                        document.getElementById("label-language").textContent = strings.label_language;
+
+                        document.getElementById("language-selector").options[0].textContent = strings.language_english;
+                        document.getElementById("language-selector").options[1].textContent = strings.language_spanish;
+
+                        document.getElementById("welcome").textContent = strings.welcome;
+                        document.getElementById("eula").textContent = strings.eula;
+                        document.getElementById("terms").textContent = strings.terms;
+                        document.getElementById("privacy_policy").textContent = strings.privacy_policy;
+                        document.getElementById("developer").textContent = strings.developer;
+                        document.getElementById("version").textContent = strings.version.replace("{version}", "1.0.0");
+                        document.getElementById("contact_support").textContent = strings.contact_support;
+                        document.getElementById("rate_us").textContent = strings.rate_us;
+                        document.getElementById("developer_name").textContent = strings.developer;
+                        document.getElementById("home_link").textContent = strings.home;
+
+                        updateDocumentLinks();
+                    })
+                    .catch(error => console.error("Error loading language file:", error));
+            }
+
+            function updateDocumentLinks() {
+                setHref("eula", `${currentApp}/${currentLanguage}/EULA_${currentApp}.html`);
+                setHref("terms", `${currentApp}/${currentLanguage}/Terms_${currentApp}.html`);
+                setHref("privacy_policy", `${currentApp}/${currentLanguage}/Privacy_${currentApp}.html`);
+            }
+
+            function setHref(id, url) {
+                const element = document.getElementById(id);
+                if (element) element.setAttribute("href", url);
+            }
+
+            if (languageSelector) {
+                languageSelector.addEventListener("change", function () {
+                    currentLanguage = this.value;
+                    localStorage.setItem("selectedLanguage", currentLanguage);
+                    loadLanguageStrings(currentLanguage);
+                    updateDocumentLinks();
+                });
+            }
+
+            if (appSelector) {
+                appSelector.addEventListener("change", function () {
+                    currentApp = this.value;
+                    localStorage.setItem("selectedApp", currentApp);
+                    updateDocumentLinks();
+                });
+            }
+
+            loadLanguageStrings(currentLanguage);
+            updateDocumentLinks();
+        });
+    </script>
 </body>
 </html>

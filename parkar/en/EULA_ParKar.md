@@ -1,52 +1,52 @@
 ---
-title: Acuerdo de Licencia de Usuario Final (EULA)
+title: End User License Agreement (EULA)
 layout: page
 ---
 
-# Acuerdo de Licencia de Usuario Final (EULA)
+# End User License Agreement (EULA)
 
-**Última actualización:** 28 de febrero de 2025
+**Last Updated:** February 28, 2025
 
-Este Acuerdo de Licencia de Usuario Final ("EULA") es un acuerdo legal entre usted ("Usuario") y **TurbomonguerDev** ("Desarrollador"), que rige el uso de la aplicación móvil **ParKar** ("Aplicación"). Al descargar, instalar o utilizar la Aplicación, usted acepta cumplir con los términos y condiciones de este EULA.
+This End User License Agreement ("EULA") is a legal agreement between you ("User") and **TurbomonguerDev** ("Developer"), governing the use of the mobile application **ParKar** ("Application"). By downloading, installing, or using the Application, you agree to comply with the terms and conditions of this EULA.
 
-## 1. Licencia
+## 1. License
 
-**1.1. Concesión de Licencia:** El Desarrollador le otorga una licencia limitada, no exclusiva, intransferible y revocable para utilizar la Aplicación en dispositivos que posea o controle, únicamente para su uso personal y no comercial.
+**1.1. License Grant:** The Developer grants you a limited, non-exclusive, non-transferable, and revocable license to use the Application on devices that you own or control, solely for your personal and non-commercial use.
 
-**1.2. Restricciones:** Usted se compromete a no:
-- Reproducir, distribuir o transmitir la Aplicación, excepto según lo permitido en este EULA.
-- Modificar, descompilar, realizar ingeniería inversa o crear trabajos derivados basados en la Aplicación.
-- Utilizar la Aplicación para cualquier propósito comercial o ilegal.
+**1.2. Restrictions:** You agree not to:
+- Reproduce, distribute, or transmit the Application, except as permitted in this EULA.
+- Modify, decompile, reverse engineer, or create derivative works based on the Application.
+- Use the Application for any commercial or illegal purpose.
 
-## 2. Propiedad Intelectual
+## 2. Intellectual Property
 
-Todos los derechos, títulos e intereses sobre la Aplicación, incluyendo pero no limitándose a código fuente, imágenes, logotipos y contenido, son propiedad del Desarrollador y están protegidos por leyes de propiedad intelectual. Este EULA no le otorga ningún derecho sobre la propiedad intelectual del Desarrollador.
+All rights, titles, and interests in the Application, including but not limited to source code, images, logos, and content, are owned by the Developer and protected by intellectual property laws. This EULA does not grant you any rights to the Developer's intellectual property.
 
-## 3. Privacidad y Recopilación de Datos
+## 3. Privacy and Data Collection
 
-**3.1. Datos de Ubicación:** La Aplicación utiliza datos de ubicación para proporcionar sus funcionalidades principales. Estos datos se almacenan únicamente en su dispositivo y no se transmiten al Desarrollador ni a terceros.
+**3.1. Location Data:** The Application uses location data to provide its core functionality. This data is stored solely on your device and is not transmitted to the Developer or third parties.
 
-**3.2. Cuentas de Usuario:** En futuras actualizaciones, la Aplicación podrá ofrecer la opción de crear cuentas de usuario para acceder a funciones premium, como sincronización de datos y historial de estacionamiento. La creación de una cuenta será opcional y se gestionará mediante correo electrónico y contraseña, o a través de cuentas de Google/Apple.
+**3.2. User Accounts:** In future updates, the Application may offer the option to create user accounts to access premium features, such as data synchronization and parking history. Account creation will be optional and managed via email and password, or through Google/Apple accounts.
 
-## 4. Servicios de Terceros
+## 4. Third-Party Services
 
-La Aplicación puede integrar servicios de terceros, como la API de Google Maps, para mejorar la experiencia del usuario. Usted reconoce y acepta que el uso de dichos servicios está sujeto a los términos y políticas de privacidad de los respectivos proveedores.
+The Application may integrate third-party services, such as the Google Maps API, to enhance the user experience. You acknowledge and agree that the use of such services is subject to the terms and privacy policies of the respective providers.
 
-## 5. Limitación de Responsabilidad
+## 5. Limitation of Liability
 
-La Aplicación se proporciona "tal cual", sin garantías de ningún tipo. El Desarrollador no será responsable de ningún daño directo, indirecto, incidental o consecuente que surja del uso o la imposibilidad de uso de la Aplicación.
+The Application is provided "as is," without any warranties of any kind. The Developer shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use the Application.
 
-## 6. Terminación
+## 6. Termination
 
-Este EULA estará vigente hasta que sea terminado por usted o por el Desarrollador. Sus derechos bajo este EULA terminarán automáticamente si incumple cualquiera de sus términos. Al finalizar, debe dejar de usar y eliminar todas las copias de la Aplicación.
+This EULA remains in effect until terminated by you or the Developer. Your rights under this EULA will automatically terminate if you violate any of its terms. Upon termination, you must stop using and delete all copies of the Application.
 
-## 7. Cambios en el EULA
+## 7. Changes to the EULA
 
-El Desarrollador se reserva el derecho de modificar este EULA en cualquier momento. Se notificará a los usuarios sobre cambios significativos a través de la Aplicación o por otros medios apropiados. El uso continuado de la Aplicación después de dichas modificaciones constituirá su aceptación de los nuevos términos.
+The Developer reserves the right to modify this EULA at any time. Users will be notified of significant changes through the Application or other appropriate means. Continued use of the Application after such modifications constitutes acceptance of the new terms.
 
-## 8. Contacto
+## 8. Contact
 
-Si tiene preguntas o inquietudes sobre este EULA, puede contactar al Desarrollador en: **turbomonguer.dev@gmail.com**
+If you have any questions or concerns regarding this EULA, you may contact the Developer at: **turbomonguer.dev@gmail.com**
 
 ---
 

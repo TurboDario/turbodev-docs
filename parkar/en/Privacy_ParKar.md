@@ -1,73 +1,73 @@
 ---
-title: Política de Privacidad
+title: Privacy Policy
 layout: page
 ---
 
-# Política de Privacidad
+# Privacy Policy
 
-**Última actualización:** 28 de febrero de 2025
+**Last Updated:** February 28, 2025
 
-En **ParKar**, desarrollado por **TurbomonguerDev**, valoramos y respetamos tu privacidad. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos tu información personal cuando utilizas nuestra aplicación móvil.
+At **ParKar**, developed by **TurbomonguerDev**, we value and respect your privacy. This Privacy Policy describes how we collect, use, and protect your personal information when you use our mobile application.
 
-## 1. Información que Recopilamos
+## 1. Information We Collect
 
-### 1.1. Datos de Ubicación
+### 1.1. Location Data
 
-- **Recopilación**: Para ofrecer las funcionalidades principales de **ParKar**, como marcar y recordar la ubicación de tu estacionamiento, necesitamos acceder a tus datos de ubicación en tiempo real.
-- **Uso**: Estos datos se utilizan exclusivamente para:
-  - Guardar la ubicación donde has estacionado tu vehículo.
-  - Proporcionarte direcciones para regresar a tu vehículo.
-  - Permitir la edición manual de la ubicación de estacionamiento.
-- **Almacenamiento**: Los datos de ubicación se almacenan localmente en tu dispositivo y no se transmiten a nuestros servidores ni a terceros.
+- **Collection**: To provide the core functionalities of **ParKar**, such as marking and remembering your parking location, we require access to your real-time location data.
+- **Usage**: This data is used exclusively to:
+  - Save the location where you parked your vehicle.
+  - Provide directions back to your vehicle.
+  - Allow manual editing of the parking location.
+- **Storage**: Location data is stored locally on your device and is not transmitted to our servers or third parties.
 
-### 1.2. Datos de Cuenta (Futuro)
+### 1.2. Account Data (Future)
 
-- **Recopilación**: En futuras actualizaciones, **ParKar** ofrecerá la opción de crear una cuenta de usuario para acceder a funciones premium. Para ello, podremos recopilar:
-  - Dirección de correo electrónico.
-  - Contraseña.
-  - Opcionalmente, autenticación a través de cuentas de Google o Apple.
-- **Uso**: Estos datos permitirán:
-  - Sincronizar el historial de estacionamiento entre múltiples dispositivos.
-  - Compartir la ubicación de estacionamiento con otros usuarios autorizados.
-  - Acceder a funcionalidades premium adicionales.
-- **Almacenamiento**: La información de la cuenta se almacenará de manera segura en nuestros servidores, cumpliendo con las normativas de protección de datos aplicables.
+- **Collection**: In future updates, **ParKar** will offer the option to create a user account to access premium features. For this, we may collect:
+  - Email address.
+  - Password.
+  - Optionally, authentication through Google or Apple accounts.
+- **Usage**: This data will enable:
+  - Synchronization of parking history across multiple devices.
+  - Sharing of parking location with authorized users.
+  - Access to additional premium features.
+- **Storage**: Account information will be securely stored on our servers, complying with applicable data protection regulations.
 
-## 2. Uso de la Información
+## 2. Use of Information
 
-Utilizamos la información recopilada para:
+We use the collected information to:
 
-- Proporcionar y mejorar las funcionalidades de **ParKar**.
-- Sincronizar datos entre dispositivos cuando se utiliza una cuenta de usuario.
-- Desarrollar nuevas funciones y servicios basados en las necesidades de los usuarios.
+- Provide and improve **ParKar** functionalities.
+- Synchronize data across devices when a user account is utilized.
+- Develop new features and services based on user needs.
 
-## 3. Compartición de Datos
+## 3. Data Sharing
 
-- **Terceros**: Actualmente, no compartimos tus datos personales con terceros.
-- **Funciones de Sincronización (Futuro)**: Con tu consentimiento explícito, podrás compartir la ubicación de tu estacionamiento con otros usuarios de **ParKar** para funcionalidades como sincronización de vehículos compartidos.
+- **Third Parties**: Currently, we do not share your personal data with third parties.
+- **Synchronization Features (Future)**: With your explicit consent, you will be able to share your parking location with other **ParKar** users for features like shared vehicle synchronization.
 
-## 4. Seguridad de los Datos
+## 4. Data Security
 
-Implementamos medidas de seguridad técnicas y organizativas para proteger tu información contra accesos no autorizados, alteraciones o destrucción. Sin embargo, ningún sistema es completamente seguro, por lo que no podemos garantizar la seguridad absoluta de tus datos.
+We implement technical and organizational security measures to protect your information from unauthorized access, alterations, or destruction. However, no system is completely secure, so we cannot guarantee absolute security of your data.
 
-## 5. Derechos del Usuario
+## 5. User Rights
 
-Tienes derecho a:
+You have the right to:
 
-- **Acceder**: Solicitar una copia de los datos personales que tenemos sobre ti.
-- **Rectificar**: Corregir cualquier información inexacta o incompleta.
-- **Eliminar**: Solicitar la eliminación de tus datos personales.
-- **Oponerte**: Restringir o oponerte al procesamiento de tus datos en ciertas circunstancias.
+- **Access**: Request a copy of the personal data we hold about you.
+- **Rectify**: Correct any inaccurate or incomplete information.
+- **Delete**: Request the deletion of your personal data.
+- **Object**: Restrict or object to the processing of your data under certain circumstances.
 
-Para ejercer estos derechos, contáctanos en: **turbomonguer.dev@gmail.com**
+To exercise these rights, contact us at: **turbomonguer.dev@gmail.com**
 
-## 6. Cambios en la Política de Privacidad
+## 6. Changes to the Privacy Policy
 
-Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos sobre cambios significativos a través de la aplicación y actualizaremos la fecha de "Última actualización" en la parte superior de este documento.
+We may update this Privacy Policy periodically. We will notify you of significant changes through the application and update the "Last Updated" date at the top of this document.
 
-## 7. Contacto
+## 7. Contact
 
-Si tienes preguntas o inquietudes sobre esta Política de Privacidad, por favor contáctanos en: **turbomonguer.dev@gmail.com**
+If you have any questions or concerns about this Privacy Policy, please contact us at: **turbomonguer.dev@gmail.com**
 
 ---
 
-Este documento está diseñado para proporcionar claridad y transparencia sobre el uso y manejo de datos en **ParKar**. Se recomienda revisarlo periódicamente para estar al tanto de cualquier actualización o cambio.
+This document is designed to provide clarity and transparency regarding the use and management of data in **ParKar**. It is recommended to review it periodically to stay informed about any updates or changes.

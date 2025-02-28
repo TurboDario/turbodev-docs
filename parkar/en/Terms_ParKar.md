@@ -1,114 +1,53 @@
 ---
-title: Términos y Condiciones de Uso
+title: Terms and Conditions of Use
 layout: page
 ---
 
-# Términos y Condiciones de Uso
+# Terms and Conditions of Use
 
-**Última actualización:** 28 de febrero de 2025
+**Last Updated:** February 28, 2025
 
-Bienvenido a **ParKar**. Al utilizar nuestra aplicación, aceptas cumplir con los siguientes términos y condiciones. Por favor, léelos detenidamente antes de utilizar la aplicación.
+Welcome to **ParKar**. By using our application, you agree to comply with the following terms and conditions. Please read them carefully before using the application.
 
-## 1. Definiciones
+## 1. Definitions
 
-- **Aplicación**: Se refiere a la aplicación móvil **ParKar** desarrollada por **TurbomonguerDev**.
-- **Usuario**: Persona que descarga, instala o utiliza la Aplicación.
-- **Servicios**: Funcionalidades ofrecidas por la Aplicación, incluyendo pero no limitándose a marcar la ubicación de estacionamiento, navegación de regreso al vehículo y edición de la ubicación de estacionamiento.
+- **Application**: Refers to the mobile application **ParKar**, developed by **TurbomonguerDev**.
+- **User**: Any person who downloads, installs, or uses the Application.
+- **Services**: Features offered by the Application, including but not limited to marking the parking location, navigating back to the vehicle, and editing the parking location.
 
-## 2. Aceptación de los Términos
+## 2. Acceptance of Terms
 
-Al descargar o utilizar la Aplicación, el Usuario acepta estos Términos y Condiciones en su totalidad. Si no está de acuerdo con alguna parte de estos términos, debe desinstalar la Aplicación y cesar su uso inmediatamente.
+By downloading or using the Application, the User fully agrees to these Terms and Conditions. If you do not agree with any part of these terms, you must uninstall the Application and stop using it immediately.
 
-## 3. Descripción de la Aplicación
+## 3. Description of the Application
 
-**ParKar** es una aplicación diseñada para ayudar a los usuarios a recordar y localizar el lugar donde han estacionado su vehículo. Las funcionalidades principales incluyen:
+**ParKar** is an application designed to help users remember and locate where they parked their vehicle. The main features include:
 
-- Marcar la ubicación de estacionamiento.
-- Navegar de regreso al vehículo.
-- Editar la ubicación de estacionamiento.
-- Acceso rápido a través de un widget para mayor comodidad.
+- Marking the parking location.
+- Navigating back to the vehicle.
+- Editing the parking location.
+- Quick access via a widget for convenience.
 
-## 4. Uso de la Aplicación
+## 4. Use of the Application
 
-El Usuario se compromete a utilizar la Aplicación de manera responsable y conforme a la ley. Queda prohibido:
+The User agrees to use the Application responsibly and in compliance with the law. The following actions are prohibited:
 
-- Utilizar la Aplicación para fines comerciales sin autorización previa.
-- Modificar, descompilar o realizar ingeniería inversa de la Aplicación.
-- Utilizar la Aplicación de manera que pueda dañar, deshabilitar o sobrecargar los servidores o redes asociados.
+- Using the Application for commercial purposes without prior authorization.
+- Modifying, decompiling, or reverse engineering the Application.
+- Using the Application in a way that could damage, disable, or overload associated servers or networks.
 
-## 5. Publicidad
+## 5. Advertising
 
-Actualmente, **ParKar** no incluye publicidad. Sin embargo, en futuras actualizaciones, podríamos incorporar anuncios no invasivos en la versión gratuita de la Aplicación. Notificaremos a los usuarios sobre cualquier cambio en este aspecto.
+Currently, **ParKar** does not include advertisements. However, in future updates, we may introduce non-intrusive ads in the free version of the Application. Users will be notified of any changes regarding this matter.
 
-## 6. Actualizaciones y Cambios en los Términos
+## 6. Updates and Changes to the Terms
 
-**TurbomonguerDev** se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán efectivas una vez publicadas en la Aplicación. Se recomienda a los usuarios revisar periódicamente los términos para estar informados de posibles cambios.
+**TurbomonguerDev** reserves the right to modify these Terms and Conditions at any time. The modifications will become effective once published within the Application. Users are encouraged to review these terms periodically to stay informed about any changes.
 
-## 7. Contacto
+## 7. Contact
 
-Para consultas o soporte, puedes contactarnos en: **turbomonguer.dev@gmail.com**
-
----
-
-## 2. Política de Privacidad
-
-**Nombre del archivo**: `Politica_de_Privacidad_ParKar.md`
-
-```markdown
----
-title: Política de Privacidad
-layout: page
----
-
-# Política de Privacidad
-
-**Última actualización:** 28 de febrero de 2025
-
-En **ParKar**, valoramos tu privacidad y nos comprometemos a proteger tus datos personales. Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos la información de nuestros usuarios.
-
-## 1. Información que Recopilamos
-
-### 1.1. Datos de Ubicación
-
-- **Recopilación**: La Aplicación recopila datos de ubicación para permitir a los usuarios marcar y recordar el lugar de estacionamiento de su vehículo.
-- **Uso**: Los datos de ubicación se utilizan exclusivamente para proporcionar las funcionalidades principales de la Aplicación.
-- **Almacenamiento**: Toda la información de ubicación se almacena localmente en el dispositivo del usuario y no se transmite a nuestros servidores.
-
-### 1.2. Datos de Cuenta (Futuro)
-
-- **Recopilación**: En futuras actualizaciones, la Aplicación ofrecerá la opción de crear una cuenta de usuario utilizando un correo electrónico y contraseña, o mediante autenticación con cuentas de Google/Apple.
-- **Uso**: Estos datos permitirán sincronizar el historial de estacionamiento entre dispositivos y acceder a funciones premium.
-- **Almacenamiento**: La información de la cuenta se almacenará de manera segura en nuestros servidores, cumpliendo con las normativas de protección de datos aplicables.
-
-## 2. Compartición de Datos
-
-- **Terceros**: Actualmente, no compartimos datos de ubicación ni de usuario con terceros.
-- **Funciones Premium Futuras**: Planeamos introducir una función que permita a dos usuarios sincronizar la ubicación de un vehículo compartido. Esta funcionalidad requerirá el consentimiento explícito de ambos usuarios involucrados.
-
-## 3. Seguridad de los Datos
-
-Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos contra accesos no autorizados, alteraciones o destrucción. Sin embargo, ningún sistema es completamente seguro, por lo que no podemos garantizar la seguridad absoluta de tu información.
-
-## 4. Derechos del Usuario
-
-Tienes derecho a:
-
-- **Acceder**: Solicitar una copia de los datos personales que tenemos sobre ti.
-- **Rectificar**: Corregir cualquier información inexacta o incompleta.
-- **Eliminar**: Solicitar la eliminación de tus datos personales.
-- **Oponerte**: Restringir o oponerte al procesamiento de tus datos en ciertas circunstancias.
-
-Para ejercer estos derechos, contáctanos en: **turbomonguer.dev@gmail.com**
-
-## 5. Cambios en la Política de Privacidad
-
-Podemos actualizar esta Política de Privacidad periódicamente. Notificaremos a los usuarios sobre cambios significativos a través de la Aplicación y actualizaremos la fecha de "Última actualización" en la parte superior de este documento.
-
-## 6. Contacto
-
-Si tienes preguntas o inquietudes sobre esta Política de Privacidad, por favor contáctanos en: **turbomonguer.dev@gmail.com**
+For inquiries or support, you can contact us at: **turbomonguer.dev@gmail.com**
 
 ---
 
-Estos documentos están diseñados para proporcionar claridad y transparencia sobre el uso y manejo de datos en **ParKar**. Se recomienda revisarlos periódicamente para estar al tanto de cualquier actualización o cambio.
-::contentReference[oaicite:0]{index=0}
+These Terms and Conditions govern your use of **ParKar** and are designed to ensure clarity and transparency. We recommend reviewing them periodically to stay updated on any modifications.

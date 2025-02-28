@@ -1,11 +1,18 @@
 {
-    "app_name": "ParKar",
-    "welcome": "Welcome to ParKar Documentation!",
+    "page_title": "TurbomonguerDev Docs",
+    "app_name": "TurbomonguerDev Docs",
+    "label_app": "App:",
+    "label_language": "Language:",
+    "language_english": "English",
+    "language_spanish": "Spanish",
+    "welcome": "Welcome to TurbomonguerDev Documentation!",
     "eula": "End User License Agreement (EULA)",
     "terms": "Terms and Conditions",
     "privacy_policy": "Privacy Policy",
-    "developer": "Developer: TurbomonguerDev",
+    "developer": "Developer: TurbomongerDev",
     "version": "Version: {version}",
     "contact_support": "Contact Support",
-    "rate_us": "Rate us on Google Play"
+    "rate_us": "Rate us on Google Play",
+    "home": "Home",
+    "back_home": "← Back to Home"
 }

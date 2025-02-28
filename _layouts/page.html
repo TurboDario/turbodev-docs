@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    
-    <link rel="stylesheet" href="/TurbomonguerDev-docs/styles.css">
-    <script defer src="/TurbomonguerDev-docs/docs.js"></script>
+    <title id="page-title"></title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/docs.js"></script>
 </head>
 <body>
     <header>
-        <h1>{{ page.title }}</h1>
+        <h1 id="app-name"></h1>
         <div>
-            <label for="language-selector">Language:</label>
+            <label id="label-language" for="language-selector"></label>
             <select id="language-selector">
-                <option value="en">English</option>
-                <option value="es">Español</option>
+                <option value="en"></option>
+                <option value="es"></option>
             </select>
         </div>
     </header>
 
     <hr>
     <main>
+        <a id="back-home" href="/" class="btn"></a>
         <article>
             {{ content }}
         </article>
-
-        <a href="/TurbomonguerDev-docs/" class="btn">← Back to Home</a>
     </main>
     <hr>
 
     <footer>
-        <p>© 2024 TurbomonguerDev | <a href="/TurbomonguerDev-docs/">Home</a></p>
+        <p>© 2025 <span id="developer-name"></span> | <a href="/" id="home-link"></a></p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const languageSelector = document.getElementById("language-selector");
+
+            let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
+            languageSelector.value = currentLanguage;
+
+            function loadLanguageStrings(language) {
+                fetch(`/locales/${language}.json`)
+                    .then(response => response.json())
+                    .then(strings => {
+                        document.getElementById("page-title").textContent = strings.page_title;
+                        document.getElementById("app-name").textContent = strings.app_name;
+                        document.getElementById("label-language").textContent = strings.label_language;
+
+                        document.getElementById("language-selector").options[0].textContent = strings.language_english;
+                        document.getElementById("language-selector").options[1].textContent = strings.language_spanish;
+
+                        document.getElementById("back-home").textContent = strings.back_home;
+                        document.getElementById("developer-name").textContent = strings.developer;
+                        document.getElementById("home-link").textContent = strings.home;
+                    })
+                    .catch(error => console.error("Error loading language file:", error));
+            }
+
+            languageSelector.addEventListener("change", function () {
+                localStorage.setItem("selectedLanguage", this.value);
+                loadLanguageStrings(this.value);
+            });
+
+            loadLanguageStrings(currentLanguage);
+        });
+    </script>
 </body>
 </html>
