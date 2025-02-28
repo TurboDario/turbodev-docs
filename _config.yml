@@ -2,9 +2,19 @@ title: TurboDev Docs
 description: Official legal documents for TurboDev applications.
 theme: jekyll-theme-cayman
 markdown: kramdown
+
+collections:
+  parkar:
+    output: true
+    permalink: /:collection/:path/
+  locales:
+    output: false
+
 include:
-  - parkar
-  - locales
   - docs.js
   - styles.css
   - index.html
+
+exclude:
+  - README.md
+  - LICENSE
