@@ -41,12 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
       contentSection.style.display = "none";
       contentContainer.innerHTML = "";
       currentFile = null;
+      history.replaceState(null, "", window.location.pathname);
     }
   
     function showContent(fileName) {
       homeSection.style.display = "none";
       contentSection.style.display = "block";
       currentFile = fileName;
+      history.replaceState(null, "", `#${fileName}`);
       const path = `parkar/${currentLanguage}/${fileName}`;
       fetch(path)
         .then((response) => {
@@ -101,5 +103,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     loadLanguageStrings(currentLanguage);
+  
+    if (window.location.hash) {
+      const file = window.location.hash.substring(1);
+      showContent(file);
+    }
   });
   
