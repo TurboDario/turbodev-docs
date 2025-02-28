@@ -1,0 +1,11 @@
+{
+    "app_name": "ParKar",
+    "welcome": "Welcome to ParKar documentation!",
+    "eula": "End User License Agreement (EULA)",
+    "terms": "Terms and Conditions",
+    "privacy_policy": "Privacy Policy",
+    "developer": "Developer: TurboDev",
+    "version": "Version: {version}",
+    "contact_support": "Contact Support",
+    "rate_us": "Rate us on Google Play"
+  }
