@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const termsLink = document.getElementById("terms");
     const privacyLink = document.getElementById("privacy_policy");
     const backHomeLink = document.getElementById("back-home");
-  
+
     let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
     let currentFile = null;
     languageSelector.value = currentLanguage;
-  
+
     function loadLanguageStrings(language) {
       fetch(`locales/${language}.json`)
         .then((response) => response.json())
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
           contentContainer.innerHTML = "<p>Unable to load content.</p>";
         });
     }
-  
+
     languageSelector.addEventListener("change", function () {
       currentLanguage = this.value;
       localStorage.setItem("selectedLanguage", currentLanguage);
@@ -81,32 +81,31 @@ document.addEventListener("DOMContentLoaded", function () {
         showContent(currentFile);
       }
     });
-  
+
     eulaLink.addEventListener("click", function (event) {
       event.preventDefault();
       showContent("EULA_ParKar.html");
     });
-  
+
     termsLink.addEventListener("click", function (event) {
       event.preventDefault();
       showContent("Terms_ParKar.html");
     });
-  
+
     privacyLink.addEventListener("click", function (event) {
       event.preventDefault();
       showContent("Privacy_ParKar.html");
     });
-  
+
     backHomeLink.addEventListener("click", function (event) {
       event.preventDefault();
       showHome();
     });
-  
+
     loadLanguageStrings(currentLanguage);
-  
+
     if (window.location.hash) {
       const file = window.location.hash.substring(1);
       showContent(file);
     }
   });
-  
