@@ -1,7 +1,7 @@
-# 📜 TurboDev Docs
+# 📜 TurbomonguerDev Docs
 
-**Public legal documents for TurboDev applications** 
-This repository contains the End User License Agreements (EULA), Terms and Conditions, and Privacy Policies for all TurboDev applications. 
+**Public legal documents for TurbomonguerDev applications** 
+This repository contains the End User License Agreements (EULA), Terms and Conditions, and Privacy Policies for all TurbomonguerDev applications. 
 Documents are hosted using **GitHub Pages** for easy access and updates.
 
 ---
@@ -9,12 +9,12 @@ Documents are hosted using **GitHub Pages** for easy access and updates.
 ## 📂 Available Documents
 
 ### **ParKar**
-- 📜 [End User License Agreement (EULA)](https://tuusuario.github.io/turbodev-docs/eula/EULA_ParKar.txt)
-- 📄 [Terms and Conditions](https://tuusuario.github.io/turbodev-docs/terms_and_conditions/Terms_ParKar.txt)
-- 🔒 [Privacy Policy](https://tuusuario.github.io/turbodev-docs/privacy_policy/Privacy_ParKar.txt)
+- 📜 [End User License Agreement (EULA)](https://tuusuario.github.io/TurbomonguerDev-docs/eula/EULA_ParKar.txt)
+- 📄 [Terms and Conditions](https://tuusuario.github.io/TurbomonguerDev-docs/terms_and_conditions/Terms_ParKar.txt)
+- 🔒 [Privacy Policy](https://tuusuario.github.io/TurbomonguerDev-docs/privacy_policy/Privacy_ParKar.txt)
 
 ### **Future Apps**
-Other TurboDev applications will have their legal documents added here.
+Other TurbomonguerDev applications will have their legal documents added here.
 
 ---
 

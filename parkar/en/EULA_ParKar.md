@@ -7,7 +7,7 @@ layout: page
 
 **Última actualización:** 28 de febrero de 2025
 
-Este Acuerdo de Licencia de Usuario Final ("EULA") es un acuerdo legal entre usted ("Usuario") y **TurboDev** ("Desarrollador"), que rige el uso de la aplicación móvil **ParKar** ("Aplicación"). Al descargar, instalar o utilizar la Aplicación, usted acepta cumplir con los términos y condiciones de este EULA.
+Este Acuerdo de Licencia de Usuario Final ("EULA") es un acuerdo legal entre usted ("Usuario") y **TurbomonguerDev** ("Desarrollador"), que rige el uso de la aplicación móvil **ParKar** ("Aplicación"). Al descargar, instalar o utilizar la Aplicación, usted acepta cumplir con los términos y condiciones de este EULA.
 
 ## 1. Licencia
 
@@ -50,4 +50,4 @@ Si tiene preguntas o inquietudes sobre este EULA, puede contactar al Desarrollad
 
 ---
 
-**TurboDev**
+**TurbomonguerDev**

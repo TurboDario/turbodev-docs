@@ -11,7 +11,7 @@ Bienvenido a **ParKar**. Al utilizar nuestra aplicación, aceptas cumplir con lo
 
 ## 1. Definiciones
 
-- **Aplicación**: Se refiere a la aplicación móvil **ParKar** desarrollada por **TurboDev**.
+- **Aplicación**: Se refiere a la aplicación móvil **ParKar** desarrollada por **TurbomonguerDev**.
 - **Usuario**: Persona que descarga, instala o utiliza la Aplicación.
 - **Servicios**: Funcionalidades ofrecidas por la Aplicación, incluyendo pero no limitándose a marcar la ubicación de estacionamiento, navegación de regreso al vehículo y edición de la ubicación de estacionamiento.
 
@@ -42,7 +42,7 @@ Actualmente, **ParKar** no incluye publicidad. Sin embargo, en futuras actualiza
 
 ## 6. Actualizaciones y Cambios en los Términos
 
-**TurboDev** se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán efectivas una vez publicadas en la Aplicación. Se recomienda a los usuarios revisar periódicamente los términos para estar informados de posibles cambios.
+**TurbomonguerDev** se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán efectivas una vez publicadas en la Aplicación. Se recomienda a los usuarios revisar periódicamente los términos para estar informados de posibles cambios.
 
 ## 7. Contacto
 

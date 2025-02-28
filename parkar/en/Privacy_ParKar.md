@@ -7,7 +7,7 @@ layout: page
 
 **Última actualización:** 28 de febrero de 2025
 
-En **ParKar**, desarrollado por **TurboDev**, valoramos y respetamos tu privacidad. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos tu información personal cuando utilizas nuestra aplicación móvil.
+En **ParKar**, desarrollado por **TurbomonguerDev**, valoramos y respetamos tu privacidad. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos tu información personal cuando utilizas nuestra aplicación móvil.
 
 ## 1. Información que Recopilamos
 
