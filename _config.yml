@@ -1,4 +1,6 @@
 title: TurboDev Docs
 description: Official legal documents for TurboDev applications.
-theme: jekyll-theme-cayman  # Puedes cambiar el tema si quieres
+theme: jekyll-theme-cayman  # Tema de GitHub Pages
 markdown: kramdown
+include:
+  - parkar
