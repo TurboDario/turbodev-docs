@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
-
+  
   <link rel="stylesheet" href="/turbodev-docs/styles.css">
+  <script defer src="/turbodev-docs/docs.js"></script>
 
   <style>
     body {
@@ -47,14 +48,18 @@
     .btn:hover {
       background-color: #ddd;
     }
-    footer p {
-      margin-bottom: 10px;
+    #language-selector {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>{{ page.title }}</h1>
+    <select id="language-selector">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
   </header>
 
   <hr>
@@ -68,9 +73,7 @@
   <hr>
 
   <footer>
-    <p>
-      © 2024 TurboDev | <a href="/turbodev-docs/">Home</a>
-    </p>
+    <p>© 2024 TurboDev | <a href="/turbodev-docs/">Home</a></p>
   </footer>
 </body>
 </html>
